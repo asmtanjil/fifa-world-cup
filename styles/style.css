@@ -8,14 +8,14 @@
 body{
   font-family: 'Poppins', sans-serif;
 }
+.header, .container{
+  margin: 50px;
+}
 
 /* -----------------------------
         Banner Styles
 -------------------------------- */
 
-.header{
-  margin: 50px;
-}
 .banner{
   display: flex;
   justify-content: space-evenly;
@@ -44,6 +44,24 @@ body{
   padding: .5em;
   border-radius: .5em;
 }
+.banner-link:hover{
+  animation: liveannim 4s ease-in-out .3s infinite alternate;
+  animation-play-state: running;
+}
+@keyframes liveannim {
+  0%{
+    background-color:coral;
+  }
+  25%{
+    background-color:slateblue;
+  }
+  50%{
+    background-color:#DD0000;
+  }
+  100%{
+    background-color: navy
+  }
+}
 .banner-link a{
   text-decoration: none;
   color: #FFFFFF;
@@ -55,9 +73,6 @@ body{
 /* -----------------------------
         Main Section Styles
 -------------------------------- */
-.container{
-  margin: 50px;
-}
 .main-contents {
   display: flex;
   justify-content: space-between;
@@ -175,7 +190,7 @@ body{
   height: 30vh;
   background-color: #000000;
 }
-.goal{
+.football{
   text-align: center;
   padding-top: 2.5em;
   color: #FFFFFF;
@@ -184,11 +199,11 @@ body{
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 1.5em;
+  margin: 1.5rem;
 }
 hr{
   border: 1px solid rgb(39, 36, 36);
-  margin: 0 2.5em;
+  margin: 0 2.5rem;
   
 }
 .footer-link a, .footer-icon a{
