@@ -45,7 +45,7 @@ body{
   border-radius: .5em;
 }
 .banner-link:hover{
-  animation: liveannimation 5s ease-in-out .3s infinite alternate;
+  animation: liveannimation 2s ease-in-out .3s infinite alternate;
   animation-play-state: running;
   position: relative;
 }
