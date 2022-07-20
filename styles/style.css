@@ -87,7 +87,7 @@ body{
   font-size: 24px;
 }
 #active-blog{
- background-color: red;
+ background-color: #DD0000;
  color: #FFFFFF;
 }
 .main-blogs{
@@ -131,6 +131,44 @@ body{
   left: 10px;
 }
 
+.all-content{
+  display: none;
+  text-align: center;
+  margin-top: 20px;
+}
+.bonus-marks{
+ text-decoration: none;
+ background-color: #DD0000;
+ font-size: 20px;
+ color: #FFFFFF;
+ padding: 5px 15px;
+ border-radius: 5px;
+}
+
+/* -----------------------------
+    Upcoming Matches Styles
+-------------------------------- */
+
+.teams{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 60px;
+}
+.schedule{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.schedule-title{
+ font-size: 20px;
+ color: #161616;
+}
+.schedule-detail{
+  margin-top: -5px;
+  color: #4D4D4D;
+}
+
+
 /* -----------------------------
         Footer Styles
 -------------------------------- */
@@ -164,34 +202,8 @@ hr{
         Media Query Styles
 -------------------------------- */
 @media screen and (max-width:650px) {
-  .banner{
-    flex-direction: column;
-  }
-  .banner-image{
-    width: 100%;
-  }
-  .main-blogs{
-    grid-template-columns: repeat(1,1fr);
-  }
-  .side-menu {
-    width: 100%;
-  }
+
 }
 @media screen and (min width:651px) and (max-width:992px) {
-  .side-menu {
-    width: 100%;
-    background-color: #FFFFFF;
-  }
-  .nav-items{
-    flex-direction: row;
-  }
-    .main-contents {
-      flex-direction: column;
-      justify-content: space-between;
-      gap: 350px;
-    }
 
-  .main-blogs{
-    grid-template-columns: repeat(2,1fr);
-  }
 }
