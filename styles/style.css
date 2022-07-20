@@ -20,9 +20,9 @@ body{
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  background-color: black;
-  border-radius: 1.5em;
-  padding: 1.5em;
+  background-color: #161616;
+  border-radius: 25px;
+  padding: 25px;
 }
 .banner-contents{
   width: 60%;
@@ -61,8 +61,6 @@ body{
 .main-contents {
   display: flex;
   justify-content: space-between;
-  /* gap: 350px; */
-  /* flex-direction: column; */
 }
 .side-menu {
   display: flex;
@@ -72,7 +70,7 @@ body{
   border-radius: 25px;
   width: 330px;
   height: 320px;
-  background-color: black;
+  background-color: #161616;
   margin-right: 50px;
 }
 .side-menu a {
