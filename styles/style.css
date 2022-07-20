@@ -143,6 +143,13 @@ body{
   position: relative;
   left: 10px;
 }
+#cr7{
+  background-color: navy;
+  color: #FFFFFF;
+}
+.fa-star.cristiano{
+  color: #FFC014;
+}
 
 .all-content{
   display: none;
