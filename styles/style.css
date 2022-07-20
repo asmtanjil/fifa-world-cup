@@ -238,7 +238,7 @@ hr{
   }
   .footer{
     width: 100%;
-    height: 80vh;
+    height: 60vh;
   }
   .footer-link{
     flex-direction: column;
@@ -255,7 +255,28 @@ hr{
   .main-blogs{
     grid-template-columns: repeat(2, 1fr);
   }
+  .side-menu {
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #FFFFFF;
+    border-radius: 25px;
+    width: 100%;
+    margin: 0;
+  }
+  .side-menu a{
+    border: 1px solid gray;
+    margin: 20px;
+  }
   .all-content{
     display: block;
+  }
+  .footer{
+    width: 100%;
+    height: 40vh;
+  }
+  .footer-link {
+    flex-wrap: wrap;
+    gap: 40px;
+   
   }
 }
