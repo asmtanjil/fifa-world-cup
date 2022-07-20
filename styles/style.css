@@ -45,21 +45,26 @@ body{
   border-radius: .5em;
 }
 .banner-link:hover{
-  animation: liveannim 4s ease-in-out .3s infinite alternate;
+  animation: liveannimation 5s ease-in-out .3s infinite alternate;
   animation-play-state: running;
+  position: relative;
 }
-@keyframes liveannim {
+@keyframes liveannimation {
   0%{
-    background-color:coral;
+    left: 30px;
+    background-color:tomato;
   }
   25%{
-    background-color:slateblue;
+    left: 60px;
+    background-color:navy;
   }
   50%{
+    left: 30px;
     background-color:#DD0000;
   }
   100%{
-    background-color: navy
+    left: 80px;
+    background-color:darkslateblue;
   }
 }
 .banner-link a{
