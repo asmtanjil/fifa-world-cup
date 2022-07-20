@@ -18,109 +18,100 @@ body{
 }
 .banner{
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
   background-color: black;
-  border-radius: 25px;
-  padding: 25px;
+  border-radius: 1.5em;
+  padding: 1.5em;
 }
 .banner-contents{
-
+  width: 60%;
 }
 .banner-title{
-  font-size: 70px;
+  font-size: 4.5em;
   color: #FFFFFF;
   margin: 0;
 }
-.banner-detail{
-  font-size: 16px;
+.banner-author{
+  font-size: 1em;
   color: #FFFFFF;
 }
 .banner-link{
   display: flex;
   justify-content: space-evenly;
   background-color: #DD0000;
-  width: 130px;
-  padding: 8px;
-  border-radius: 5px;
+  width: 8em;
+  padding: .5em;
+  border-radius: .5em;
 }
 .banner-link a{
   text-decoration: none;
   color: #FFFFFF;
 }
 .banner-image{
-
+  position: relative;
+  top: 31px;
 }
-
 /* -----------------------------
         Main Section Styles
 -------------------------------- */
-
 .container{
   margin: 50px;
 }
-.main-contents{
+.main-contents {
   display: flex;
   justify-content: space-between;
+  /* gap: 350px; */
+  /* flex-direction: column; */
 }
 .side-menu {
-  border-radius: 25px;
-  width: 430px;
-  height: 410px;
-  background-color: black;
-  /* margin-right: 100px; */
-}
-.nav-items{
   display: flex;
   flex-direction: column;
-  padding: 20px;
-}
-.nav-item {
-  background-color: white;
-  margin: 15px;
-  width: 293px;
-  padding: 20px;
-  text-align: center;
+  justify-content: center;
+  align-items: center;
   border-radius: 25px;
+  width: 330px;
+  height: 320px;
+  background-color: black;
+  margin-right: 50px;
 }
-.nav-item a{
- text-decoration: none;
- font-size: 26px;
- color: black;
+.side-menu a {
+  text-decoration: none;
+  background-color: white;
+  width: 210px;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 25px;
+  color: #000000;
+  text-align: center;
+  font-size: 24px;
 }
-#item-3{
-  background-color: #DD0000;
+#active-blog{
+ background-color: red;
+ color: #FFFFFF;
 }
-/*
-#item-1{
-
-}
-#item-2{
-
-}
-#item-3{
-
-} */
-
 .main-blogs{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-column-gap: 20px;
   grid-row-gap: 20px;
 }
-.field-blogs{
-  width: 425px;
+.field-blog {
+  width: 310px;
+  padding: 15px;
   border-radius: 10px;
-  box-shadow: 2px 2px 2px lightgray;
+  box-shadow: 2px 2px 5px lightgray;
 }
-.field-banner img {
-  width: 425px;
-}
-.blog-button{
-  
-}
-.blog-detail{
-  padding: 10px;
+.button{
+  position: relative;
+  top: 5px;
+  color: #161616;
+  text-decoration: none;
+  border: 1px solid #161616;
+  border-radius: 5px;
+  padding: 0 5px;
+  color: #161616;
+
 }
 .blog-title{
   font-size: 18px;
@@ -128,9 +119,47 @@ body{
 }
 .rating{
   display: flex;
-  justify-content: space-around;
+  justify-content: flex-start;
+}
+.rating a{
+  text-decoration: none;
+  color: #161616B2;
+  margin-right: 50px;
+}
+.rating-icon{
+  position: relative;
+  left: 10px;
 }
 
+/* -----------------------------
+        Footer Styles
+-------------------------------- */
+.footer{
+  width: 100%;
+  height: 30vh;
+  background-color: #000000;
+}
+.goal{
+  text-align: center;
+  padding-top: 2.5em;
+  color: #FFFFFF;
+}
+.footer-link, .footer-icon{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1.5em;
+}
+hr{
+  border: 1px solid rgb(39, 36, 36);
+  margin: 0 2.5em;
+  
+}
+.footer-link a, .footer-icon a{
+  text-decoration: none;
+  padding: 0 10px;
+  color: #B9B9B9
+}
 /* -----------------------------
         Media Query Styles
 -------------------------------- */
@@ -144,17 +173,24 @@ body{
   .main-blogs{
     grid-template-columns: repeat(1,1fr);
   }
+  .side-menu {
+    width: 100%;
+  }
 }
 @media screen and (min width:651px) and (max-width:992px) {
   .side-menu {
     width: 100%;
+    background-color: #FFFFFF;
   }
   .nav-items{
     flex-direction: row;
   }
-  .main-contents{
-    flex-direction: column;
-  }
+    .main-contents {
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 350px;
+    }
+
   .main-blogs{
     grid-template-columns: repeat(2,1fr);
   }
